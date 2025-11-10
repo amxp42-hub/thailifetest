@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    text-decoration: none;
+}
+.container{
+    max-width: 960;
+    height: auto;
+    position: relative;
+    min-height: 100vh;
+
+}
+.bg{
+    max-width: 100 px;
+    height: 100px;
+    position: relative;
+    
+}
+.bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/wall.jpg');
+    z-index: -1;
+    background-size:cover;
+    background-position: center;
+    filter: brightness(45%);   
+} 
+
+.menu {
+    
+     width: 100%;
+     display: flex;
+        
+}
+.menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+    padding: 5px;
+    
+}
+.menu ul li{
+
+    margin: 0 2rem;
+}
+.menu ul li a{
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding: 5px;
+}
+
+/*content*/
+.content{
+    width: 85%;
+    margin: 0  auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.content .header .card {
+    width: 50%;
+    position: relative;
+}
+.content .header {
+    color: #fff;
+}
+.content .header h3 {
+    color: orange;
+    font-size: 7.3rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+}
+.content .header h1 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.grid-card {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+    
+}
+.grid-card .box{
+    width: 100%;
+    height: 100px;
+    background: red;
+    background-position:center ;
+    background-size: cover;
+    border-radius: 2px;
+    left: 10px;
+}
+.grid-card .box.bg1 {
+    background-image: url("images/รูปทะเลสวย-6.jpg");
+    width: 200px;
+    height: 150px;
+}
+.grid-card .box.bg2{ background-image: url('images/cupcake.jpg');
+    width: 200px;
+    height: 150px;
+}
+.grid-card .box.bg3 {
+    background-image: url("images/wall.jpg");
+    width: 200px;
+    height: 150px;
+}
+.grid-card .box.bg4{
+    background-image: url("images/LOGO-THAILIFE.jpg");
+    width: 200px;
+    height: 150px;
+}
+.box.bg1  h2 {
+    color: orange;
+    margin-top: 120px;
+    text-align: center;
+    
+}
+.box.bg2  h2 {
+    color: orange;
+    margin-top: 120px;
+    text-align: center;
+    
+}
+.box.bg3  h2 {
+    color: orange;
+    margin-top: 120px;
+    text-align: center;
+   
+    
+}
+.box.bg4  h2 {
+    color: orange;
+    margin-top: 120px;
+    text-align: center;
+    
+}
